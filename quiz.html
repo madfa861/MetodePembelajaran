@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Quiz</h1>
+      <p>Uji pengetahuanmu tentang tajwid nun mati dan tanwin.</p>
+    </div>
+  </header>
+
+  <nav class="site-nav">
+    <div class="container">
+      <a href="index.html">Beranda</a>
+      <a href="course.html">Course</a>
+      <a href="metode.html">Metode</a>
+      <a href="materi.html">Materi</a>
+      <a href="tips.html">Tips</a>
+      <a href="quiz.html">Quiz</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="content-section">
+      <h2>Quiz Materi</h2>
+      <p>Jawab pertanyaan berikut untuk menguji pemahamanmu pada Surah Pendek, Tajwid, dan Hadis yang sudah dipelajari.</p>
+      <form id="quiz-form" class="quiz-card">
+        <div class="quiz-question">
+          <p>1. Ayat pertama Surah Al-Ikhlas adalah?</p>
+          <label><input type="radio" name="q1" value="a"> قُلْ هُوَ اللَّهُ أَحَدٌ</label><br>
+          <label><input type="radio" name="q1" value="b"> قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ</label><br>
+          <label><input type="radio" name="q1" value="c"> قُلْ أَعُوذُ بِرَبِّ النَّاسِ</label>
+        </div>
+        <div class="quiz-question">
+          <p>2. Hukum nun mati atau tanwin yang dibaca dengan dengung halus disebut?</p>
+          <label><input type="radio" name="q2" value="a"> Izhar</label><br>
+          <label><input type="radio" name="q2" value="b"> Idgham</label><br>
+          <label><input type="radio" name="q2" value="c"> Ikhfa</label>
+        </div>
+        <div class="quiz-question">
+          <p>3. Hadis "مَنْ سَقَا ظَمْأَنًا فِي سَبِيلِ اللَّهِ ..." menjanjikan minum dari?</p>
+          <label><input type="radio" name="q3" value="a"> telaga-Ku</label><br>
+          <label><input type="radio" name="q3" value="b"> surga-Nya</label><br>
+          <label><input type="radio" name="q3" value="c"> sungai-Nya</label>
+        </div>
+        <div class="quiz-question">
+          <p>4. Surah Al-Falaq meminta perlindungan dari?</p>
+          <label><input type="radio" name="q4" value="a"> kejahatan makhluk dan sihir</label><br>
+          <label><input type="radio" name="q4" value="b"> kemiskinan dan kelaparan</label><br>
+          <label><input type="radio" name="q4" value="c"> lupa dan kebingungan</label>
+        </div>
+        <div class="quiz-question">
+          <p>5. Surah An-Nas meminta perlindungan dari?</p>
+          <label><input type="radio" name="q5" value="a"> bisikan setan dalam hati</label><br>
+          <label><input type="radio" name="q5" value="b"> bencana alam</label><br>
+          <label><input type="radio" name="q5" value="c"> penyakit dan luka</label>
+        </div>
+        <div class="quiz-question">
+          <p>6. Hukum bacaan ketika nun mati bertemu huruf-huruf ikhfa adalah?</p>
+          <label><input type="radio" name="q6" value="a"> dibaca jelas tanpa dengung</label><br>
+          <label><input type="radio" name="q6" value="b"> dibaca dengan dengung halus</label><br>
+          <label><input type="radio" name="q6" value="c"> dibaca seperti idgham</label>
+        </div>
+        <button type="submit" class="submit-button">Nilai Quiz</button>
+      </form>
+      <p id="quiz-result" class="quiz-result"></p>
+      <p id="quiz-score" class="quiz-score"></p>
+      <div id="quiz-explanations" class="quiz-explanations"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img src="ibnusina (1).png" alt="Logo Ibnu Sina">
+        </div>
+        <div class="footer-divider" aria-hidden="true"></div>
+        <div class="footer-branding" aria-hidden="false">
+          <span class="brand-name">STIT IBNU SINA</span>
+          <span class="brand-sub">KEPANJEN, MALANG</span>
+        </div>
+      </div>
+      <div class="footer-credits">
+        <p><span class="dev-label">Developer:</span></p>
+        <p>Ilham Maulana | NIM: [nim developer] | Semester: 4-PAI</p>
+        <p>Achmad Normansyah | NIM: [nim developer] | Semester: 4-PAI</p>
+        <p>Amalia Nur Fitrasari | NIM: [nim developer] | Semester: 4-PAI</p>
+        <p>M.Fitrohul Faizin | NIM: [nim developer] | Semester: 4-PAI</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

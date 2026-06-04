@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Tajwid</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Belajar Tajwid</h1>
+      <p>Materi tajwid khusus nun mati dan tanwin lengkap dengan contoh audio dan tes suara.</p>
+    </div>
+  </header>
+
+  <nav class="site-nav">
+    <div class="container">
+      <a href="index.html">Beranda</a>
+      <a href="hafalan.html">Hafalan</a>
+      <a href="tajwid.html">Tajwid</a>
+      <a href="hadist.html">Hadis</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="content-section">
+      <h2>Materi Tajwid</h2>
+      <div class="course-card">
+        <h4>Hukum Nun Mati & Tanwin</h4>
+        <p><strong>Nun mati</strong> adalah huruf nun yang diberi tanda sukun (ْ) dan tidak diikuti harakat.
+        <strong>Tanwin</strong> adalah tanda nun ganda pada akhir kata: ً , ٍ , ٌ.</p>
+        <div class="info-box">
+          <strong>Izhar</strong>
+          <p><em>Maknanya:</em> bacaan nun mati atau tanwin jelas tanpa dengung ketika bertemu huruf halqi.</p>
+          <p><strong>Huruf Izhar:</strong> ء ه ع ح غ خ.</p>
+          <p><strong>Contoh ayat:</strong> مِنْ هَٰذَا (Al-Qur'an), baca nun mati jelas sebelum huruf ه.</p>
+          <p><strong>Arti:</strong> "dari ini".</p>
+          <p>
+            <button class="secondary-button" onclick="playTajwidExample('izhar')">Dengarkan Contoh Izhar</button>
+            <audio id="audio-izhar" src="audio/izhar.mp3" preload="auto"></audio>
+          </p>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_IZHAR" title="Video Izhar" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="info-box">
+          <strong>Idgham</strong>
+          <p><em>Maknanya:</em> bunyi nun mati atau tanwin dileburkan ke huruf berikutnya, kadang terdengar dengung bila hurufnya mirip.</p>
+          <p><strong>Huruf Idgham:</strong> ي ر م ل و ن.</p>
+          <p><strong>Contoh ayat:</strong> مِنْ يَوْمٍ (Al-Qur'an) dengan lebur ke ya; suara nun mati menyatu menjadi lembut.</p>
+          <p><strong>Contoh lain:</strong> مِنْ نِّعْمَةِ (Surah Al-Baqarah 2:231), di mana nun sukun bertemu nun dan terdengar dengung.</p>
+          <p><strong>Arti contoh:</strong> "dari nikmat".</p>
+          <p>
+            <button class="secondary-button" onclick="playTajwidExample('idgham')">Dengarkan Contoh Idgham</button>
+            <audio id="audio-idgham" src="audio/idgham.mp3" preload="auto"></audio>
+          </p>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_IDGHAM" title="Video Idgham" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="info-box">
+          <strong>Ikhfa</strong>
+          <p><em>Maknanya:</em> bunyi nun mati atau tanwin dibaca samar dengan dengung ringan ketika bertemu huruf tertentu.</p>
+          <p><strong>Huruf Ikhfa:</strong> ت ث ج د ذ ز س ش ص ض ط ظ ف ق ك.</p>
+          <p><strong>Contoh ayat:</strong> مِنْ شَرِّ (Surah Al-Falaq 113:1), tanwin sebelum syin dibaca samar; dan مِنْ جِبَالٍ (Al-Baqarah 2:249).</p>
+          <p><strong>Arti contoh:</strong> "dari kejahatan" / "dari gunung-gunung".</p>
+          <p>
+            <button class="secondary-button" onclick="playTajwidExample('ikhfa')">Dengarkan Contoh Ikhfa</button>
+            <audio id="audio-ikhfa" src="audio/ikhfa.mp3" preload="auto"></audio>
+          </p>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_IKHFA" title="Video Ikhfa" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="info-box">
+          <strong>Iqlab</strong>
+          <p><em>Maknanya:</em> bunyi nun mati atau tanwin berubah menjadi mim ketika bertemu huruf ب.</p>
+          <p><strong>Huruf Iqlab:</strong> ب.</p>
+          <p><strong>Contoh ayat:</strong> مِنۢ بَعْدِهِ (Al-Qur'an), di mana nun mati berubah menjadi mim sebelum ba.</p>
+          <p><strong>Arti:</strong> "dari sesudahnya".</p>
+          <p>
+            <button class="secondary-button" onclick="playTajwidExample('iqlab')">Dengarkan Contoh Iqlab</button>
+            <audio id="audio-iqlab" src="audio/iqlab.mp3" preload="auto"></audio>
+          </p>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_IQLAB" title="Video Iqlab" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="course-card">
+        <h4>Contoh Bacaan</h4>
+        <p id="tajwid-text">مِن نَّعۡمَتِهِۦٓ</p>
+        <audio id="tajwid-audio" src="audio/tajwid_example.mp3" preload="auto" controls></audio>
+        <button class="secondary-button" onclick="playAudioExample()">Dengarkan Contoh Bacaan</button>
+        <div class="audio-hint">Jika tombol tidak berfungsi, gunakan kontrol audio di atas.</div>
+      </div>
+      <div class="course-card">
+        <h4>Test Suara</h4>
+        <p>Bacalah contoh di atas dengan jelas lalu tekan tombol rekam.</p>
+        <button class="primary-button" onclick="startSpeechTest()" id="record-button">Mulai Rekam (Tes Otomatis)</button>
+        <p id="speech-status" class="result-text"></p>
+        <p id="speech-feedback"></p>
+
+        <hr>
+        <h5>Perekaman Manual (fallback)</h5>
+        <p>Jika tes otomatis gagal, rekam suaramu lalu putar ulang untuk perbandingan.</p>
+        <button class="secondary-button" id="manual-start" onclick="startManualRecording()">Mulai Rekam Manual</button>
+        <button class="secondary-button" id="manual-stop" onclick="stopManualRecording()" disabled>Stop Rekam</button>
+        <div id="manual-controls">
+          <audio id="manual-audio" controls style="display:none; margin-top:0.75rem;"></audio>
+          <div style="margin-top:0.5rem;"><a id="download-audio" href="#" download="rekaman.wav" style="display:none;">Download Rekaman</a></div>
+        </div>
+        <p class="small-note">Jika browser tidak mendukung perekaman, gunakan aplikasi perekam lokal dan unggah file secara manual.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img src="ibnusina (1).png" alt="Logo Ibnu Sina">
+        </div>
+        <div class="footer-divider" aria-hidden="true"></div>
+        <div class="footer-branding" aria-hidden="false">
+          <span class="brand-name">STIT IBNU SINA</span>
+          <span class="brand-sub">KEPANJEN, MALANG</span>
+        </div>
+      </div>
+      <div class="footer-credits">
+        <p><span class="dev-label">Developer:</span></p>
+        <p>Ilham Maulana | NIM: [nim developer] | Semester: 4-PAI</p>
+        <p>Achmad Normansyah | NIM: [nim developer] | Semester: 4-PAI</p>
+        <p>Amalia Nur Fitrasari | NIM: [nim developer] | Semester: 4-PAI</p>
+        <p>M.Fitrohul Faizin | NIM: [nim developer] | Semester: 4-PAI</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

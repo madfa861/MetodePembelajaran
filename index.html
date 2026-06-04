@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Pembelajaran Al-Qur'an & Hadis</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Media Pembelajaran Al-Qur'an & Hadis</h1>
+      <p>Website ini membantu kamu belajar Al-Qur'an dan Hadis dengan metode, media, dan tips yang tepat.</p>
+    </div>
+  </header>
+
+  <nav class="site-nav">
+    <div class="container">
+      <a href="index.html">Beranda</a>
+      <a href="course.html">Course</a>
+      <a href="metode.html">Metode</a>
+      <a href="materi.html">Materi</a>
+      <a href="tips.html">Tips</a>
+      <a href="quiz.html">Quiz</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <h2>Selamat datang!</h2>
+      <p>Pelajari cara belajar Al-Qur'an dan Hadis dengan media yang benar, mudah, dan terarah.</p>
+      <a class="button" href="course.html">Mulai belajar</a>
+    </section>
+
+
+    <section id="metode" class="content-section">
+      <h2>Metode Belajar Al-Qur'an & Hadis</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>1. Baca dan Pahami</h3>
+          <p>Baca Al-Qur'an, terjemahan, dan Hadis dalam bahasa yang kamu mengerti, lalu pahami maknanya.</p>
+        </article>
+        <article class="card">
+          <h3>2. Hafal dan Ulangi</h3>
+          <p>Latihan hafalan ayat dan hadis dengan pengulangan rutin agar lebih kuat di ingatan.</p>
+        </article>
+        <article class="card">
+          <h3>3. Belajar dengan Guru</h3>
+          <p>Ikuti pembelajaran bersama ustaz, ustazah, atau teman untuk diskusi dan koreksi bacaan.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="materi" class="content-section">
+      <h2>Materi Surah Pendek, Tajwid & Hadis</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Surah Pendek</h3>
+          <p>Pelajari surah-surah pendek dari Juz 30 seperti:</p>
+          <ul>
+            <li>Al-Ikhlas</li>
+            <li>Al-Falaq</li>
+            <li>An-Nas</li>
+            <li>Al-Kafirun</li>
+          </ul>
+          <p>Mulai dengan membaca, menghafal, dan memahami terjemahan setiap ayatnya.</p>
+        </article>
+        <article class="card">
+          <h3>Hukum Nun Mati & Tanwin</h3>
+          <p>Pelajari cara membaca nun mati dan tanwin agar tajwid semakin benar:</p>
+          <ul>
+            <li><strong>Izhar</strong>: jelas tanpa dengung saat bertemu huruf halqi.</li>
+            <li><strong>Idgham</strong>: leburkan bunyi nun atau tanwin ke huruf berikutnya.</li>
+            <li><strong>Ikhfa</strong>: dengungkan sedikit saat bertemu huruf tertentu.</li>
+            <li><strong>Iqlab</strong>: ubah nun mati/tanwin menjadi mim ketika bertemu huruf ب.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Belajar Hadis</h3>
+          <p>Pelajari lafadz Arab hadis, arti, dan penjelasan maknanya agar kamu memahami cara mengamalkannya.</p>
+          <p>Contoh: memberi minum orang haus di jalan Allah akan diberi minum dari telaga Allah.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tips" class="content-section">
+      <h2>Tips Belajar Al-Qur'an & Hadis</h2>
+      <ul class="tips-list">
+        <li>Mulai dengan niat ikhlas dan do'a sebelum belajar.</li>
+        <li>Pelajari tajwid, terjemahan, dan konteks hadis secara bertahap.</li>
+        <li>Ulangi ayat atau hadis yang sudah dipelajari setiap hari.</li>
+        <li>Diskusikan makna dengan guru atau teman agar semakin jelas.</li>
+      </ul>
+    </section>
+
+    <section id="quiz" class="content-section">
+      <h2>Quiz Sederhana</h2>
+      <p>Jawab pertanyaan berikut untuk mengetes pengetahuanmu.</p>
+      <div class="quiz-card">
+        <p>1. Hukum nun mati atau tanwin yang dibaca dengan dengung halus disebut?</p>
+        <button onclick="checkAnswer('a')">A. Izhar</button>
+        <button onclick="checkAnswer('b')">B. Idgham</button>
+        <button onclick="checkAnswer('c')">C. Ikhfa</button>
+        <p id="quiz-result" class="quiz-result"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img src="ibnusina (1).png" alt="Logo Ibnu Sina">
+        </div>
+        <div class="footer-divider" aria-hidden="true"></div>
+        <div class="footer-branding" aria-hidden="false">
+          <span class="brand-name">STIT IBNU SINA</span>
+          <span class="brand-sub">KEPANJEN, MALANG</span>
+        </div>
+      </div>
+      <div class="footer-credits">
+        <p><span class="dev-label">Developer:</span></p>
+        <p>Ilham Maulana | NIM: [nim developer] | Semester: 4-PAI</p>
+        <p>Achmad Normansyah | NIM: [nim developer] | Semester: 4-PAI</p>
+        <p>Amalia Nur Fitrasari | NIM: [nim developer] | Semester: 4-PAI</p>
+        <p>M.Fitrohul Faizin | NIM: [nim developer] | Semester: 4-PAI</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
